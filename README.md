@@ -10,11 +10,17 @@ coding agents building apps with Etyma. There is no code here.
 - the preview and the exported app disagree;
 - a tool's text, a skill or the docs say something that is not true.
 
+## Security problems
+
+This repository is private, so a security report is an ordinary issue with the `security` label. Give only what
+reproduces it — no working exploit, no secrets. (When the repository goes public, GitHub's private vulnerability
+form takes over.)
+
 ## Do not report here when
 
 - your app's own requirement or logic is wrong — record a **defect** in your app's lifecycle instead
   (`lifecycle_record` with kind `defect`, or `/defect` in the Chat view);
-- it is a security problem — use **Security → Report a vulnerability** on this repository, never a public issue.
+
 
 ## How to report
 
