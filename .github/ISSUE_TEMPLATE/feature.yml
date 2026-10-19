@@ -1,0 +1,14 @@
+name: Feature request
+description: Something Etyma should do that it cannot today.
+labels: [enhancement, needs-triage]
+body:
+  - type: textarea
+    id: problem
+    attributes: { label: The problem, description: "What you were trying to build, and where Etyma got in the way." }
+    validations: { required: true }
+  - type: textarea
+    id: idea
+    attributes: { label: What would help }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps it took today, description: "How many turns or clicks, and where they went." }
