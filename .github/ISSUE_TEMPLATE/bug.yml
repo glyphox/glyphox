@@ -1,13 +1,13 @@
-name: Bug in Etyma
-description: Etyma answered wrongly, refused a valid call, or generated something that does not work.
+name: Bug
+description: Glyphox gave a wrong answer, refused a valid call, or generated something that doesn't work.
 labels: [bug, needs-triage]
 body:
   - type: markdown
     attributes:
-      value: "Search the open issues first. Agents: paste the body from Etyma's `etyma_report` tool instead of filling this in. Never include secrets, keys, personal data or app records."
+      value: "Search the open issues first. Agents: paste the body from Glyphox's `report` tool instead. Don't include secrets, keys, personal data or app records."
   - type: input
     id: version
-    attributes: { label: Etyma version, placeholder: "0.x.y (Help → About, or etyma_report)" }
+    attributes: { label: Glyphox version, placeholder: "1.0.1 (Extensions view, or the report tool)" }
     validations: { required: true }
   - type: dropdown
     id: door
@@ -18,19 +18,19 @@ body:
     attributes: { label: Tool or surface, placeholder: "e.g. create_workflow, the page designer, export_check" }
   - type: textarea
     id: what
-    attributes: { label: What was tried, description: "The call and its arguments, or the clicks." }
+    attributes: { label: What you did, description: "The call and its arguments, or the clicks." }
     validations: { required: true }
   - type: textarea
     id: expected
-    attributes: { label: Expected }
+    attributes: { label: What you expected }
     validations: { required: true }
   - type: textarea
     id: actual
-    attributes: { label: Actual, description: "The answer, error or result, word for word." }
+    attributes: { label: What happened, description: "The answer, error or result, exactly as shown." }
     validations: { required: true }
   - type: textarea
     id: steps
-    attributes: { label: Smallest steps to reproduce }
+    attributes: { label: Steps to reproduce }
   - type: dropdown
     id: severity
     attributes: { label: Severity, options: [low, medium, high, critical] }

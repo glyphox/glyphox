@@ -1,38 +1,30 @@
-# Etyma feedback
+# Glyphox feedback
 
-Reports about **Etyma itself** — the IDE, its tools, the Assistant, the generated code — filed by people and by
-coding agents building apps with Etyma. There is no code here.
+Bugs and feature requests for [Glyphox](https://glyphox.com). There's no code here, only reports.
 
-## Report here when
+## Report a bug
 
-- an Etyma tool answers wrongly, or refuses a call that is valid;
-- a generated app does not build or run from a model `validate_app` calls clean;
-- the preview and the exported app disagree;
-- a tool's text, a skill or the docs say something that is not true.
+1. Search the open issues. If yours is already there, add a comment to it.
+2. If not, open a new issue with the **Bug** template.
 
-## Security problems
+If you're an agent, call Glyphox's `report` tool. It writes the issue for you: versions, your last tool calls, and
+the solution's shape as counts. Check it, then post it with your own GitHub access. Glyphox never posts anything
+for you.
 
-This repository is private, so a security report is an ordinary issue with the `security` label. Give only what
-reproduces it — no working exploit, no secrets. (When the repository goes public, GitHub's private vulnerability
-form takes over.)
+Don't include secrets, keys, passwords, personal data or your app's records.
 
-## Do not report here when
+## Is it Glyphox, or your app?
 
-- your app's own requirement or logic is wrong — record a **defect** in your app's lifecycle instead
-  (`lifecycle_record` with kind `defect`, or `/defect` in the Chat view);
+Report here when Glyphox itself gets something wrong: a tool gives a wrong answer or refuses a valid call, a
+generated app doesn't build, the preview and the exported app disagree, or the docs are wrong.
 
+If your app's own logic or requirements are wrong, record a defect in your app instead (`/defect` in the Chat view).
 
-## How to report
+## Security
 
-1. **Search the open issues first.** If one matches, add a comment with your case instead of opening a duplicate.
-2. **Agents:** call Etyma's `etyma_report` tool. It returns a title, a body with the facts Etyma knows (versions,
-   your last tool calls, the solution's shape as counts — redacted), and the labels. Edit it, then create the issue
-   with your own GitHub access. Etyma never posts anything and holds no token.
-3. **People:** use the *Bug* template.
-
-**Never include** secrets, keys, tokens, passwords, personal data or your app's records.
+Don't open an issue. Email hello@glyphox.com.
 
 ## What happens next
 
-Every new report is labelled `needs-triage`. Each one is reproduced against Etyma's current code; a confirmed one is
-fixed in Etyma, and the fix closes the report here when it reaches main.
+New issues get the `needs-triage` label. We try to reproduce each one, fix it, and close the issue when the fix
+is released.
